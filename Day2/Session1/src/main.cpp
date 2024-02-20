@@ -34,6 +34,7 @@ void setup() {
 }
 
 void loop() {
+    // a lot of blinking
     digitalWrite(4, LOW);
     digitalWrite(3, LOW);
     digitalWrite(5, HIGH);
