@@ -15,18 +15,20 @@
 #include <Arduino.h>
 
 void setup() {
-    // this turns the red LED on
+    // this initalizes the Pin-Mode
     pinMode(3, OUTPUT);
-    digitalWrite(3, HIGH);
-    // this turns the green LED on
-    pinMode(4, OUTPUT);
-    // this turns the blue (purple) LED on
     pinMode(5, OUTPUT);
+    pinMode(4, OUTPUT);
+
+    // this turns the red LED on
+    digitalWrite(3, HIGH);
+    // this turns the blue (purple) LED on
     digitalWrite(5, HIGH);
 
     // this turns the purple LED off after 300 milliseconds
+    // and turns the green LED on
     delay(300);
-    digitalWrite(5,LOW);
+    digitalWrite(5, LOW);
     digitalWrite(4, HIGH);
     delay(700);
 }
