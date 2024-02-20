@@ -15,8 +15,12 @@
 #include <Arduino.h>
 
 void setup() {
+    // this turns the red LED on
     pinMode(3, OUTPUT);
     digitalWrite(3, HIGH);
+    // this turns the green LED on
+    pinMode(4, OUTPUT);
+    digitalWrite(4, HIGH);
 }
 
 void loop() {
